@@ -1,56 +1,40 @@
-#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
-
 packaging_format = 2
 
-id = "librex"
-name = "LibreX"
-description.en = "Meta search engine for Google and popular torrent sites"
-description.fr = "Méta moteur de recherche pour Google et les sites torrent populaires"
-
-version = "2023.11.14~ynh2"
-
-maintainers = []
+id = "librey"
+name = "LibreY"
+description.en = "Self-hosted meta-search engine without JavaScript, fork of LibreX"
+description.fr = "Moteur de métarecherche auto-hébergé sans JavaScript, fork de LibreX"
+version = "1.0~ynh1"
+maintainers = ["ton_pseudo"]
 
 [upstream]
-license = "AGPL-3.0-only"
-demo = "https://librey.devol.it/"
-admindoc = "https://github.com/hnhx/librex/wiki"
-code = "https://github.com/hnhx/librex"
+license = "AGPL-3.0"
+website = "https://github.com/Ahwxorg/LibreY"
+admindoc = "https://github.com/Ahwxorg/LibreY"
+userdoc = "https://github.com/Ahwxorg/LibreY"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = "all"
-multi_instance = true
-
-ldap = false
-
-sso = false
-
-disk = "50M"
-ram.build = "100M"
-ram.runtime = "50M"
+architectures = ["amd64", "arm64"]
 
 [install]
     [install.domain]
     type = "domain"
-
-    [install.init_main_permission]
-    type = "group"
-    default = "visitors"
+    help = "Choisissez le sous-domaine où LibreY sera installé (ex: librey.mondomaine.tld)."
+    default = "librey.example.tld"
 
 [resources]
+    [resources.sources]
     [resources.sources.main]
-    url = "https://github.com/hnhx/librex/archive/b5a9f12df91cb8ded541df291da58ce2f104fe62.tar.gz"
-    sha256 = "b88ae9896b281f2929b4e48f947d261bb7ecd7e2c6bd5c378237be3606f6c9b5"
-    autoupdate.upstream = "https://github.com/hnhx/librex"
-    autoupdate.strategy = "latest_github_commit"
+    url = "https://github.com/Ahwxorg/LibreY/archive/refs/heads/main.tar.gz"
+    sha256 = "" # à compléter après test
+    autoupdate.strategy = "latest_commit"
+
+    [resources.apt]
+    packages = ["nginx"]
 
     [resources.system_user]
-
-    [resources.install_dir]
+    name = "librey"
 
     [resources.permissions]
     main.url = "/"
-
-    [resources.apt]
-    packages = "php8.2-dom, php8.2-curl"
