@@ -37,8 +37,8 @@ LibreY gives you results from Google, Qwant and popular torrent sites without sp
 
 ## Documentation and resources
 
-- Official admin documentation: <h[ttps://github.com/hnhx/librex/wiki](https://github.com/Ahwxorg/LibreY/projects)>
-- Upstream app code repository: <[https://github.com/hnhx/librex](https://github.com/Ahwxorg/librey/)>
+- Official admin documentation: <https://github.com/hnhx/librex/wiki](https://github.com/Ahwxorg/LibreY/projects)>
+- Upstream app code repository: <https://github.com/hnhx/librex](https://github.com/Ahwxorg/librey/)>
 - YunoHost Store: <https://apps.yunohost.org/app/librex>
 - Report a bug: <https://github.com/YunoHost-Apps/librex_ynh/issues>
 
