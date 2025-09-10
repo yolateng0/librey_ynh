@@ -37,21 +37,21 @@ LibreY gives you results from Google, Qwant and popular torrent sites without sp
 
 ## Documentation and resources
 
-- Official admin documentation: <https://github.com/hnhx/librex/wiki](https://github.com/Ahwxorg/LibreY/projects)>
-- Upstream app code repository: <https://github.com/hnhx/librex](https://github.com/Ahwxorg/librey/)>
-- YunoHost Store: <https://apps.yunohost.org/app/librex>
-- Report a bug: <https://github.com/YunoHost-Apps/librex_ynh/issues>
+- Official admin documentation: <https://github.com/Ahwxorg/LibreY/projects>
+- Upstream app code repository: <https://github.com/hnhx/librex>
+- YunoHost Store: <https://apps.yunohost.org/app/librey>
+- Report a bug: <https://github.com/YunoHost-Apps/librey_ynh/issues>
 
 ## Developer info
 
-Please send your pull request to the [`testing` branch](https://github.com/YunoHost-Apps/librex_ynh/tree/testing).
+Please send your pull request to the [`testing` branch](https://github.com/YunoHost-Apps/librey_ynh/tree/testing).
 
 To try the `testing` branch, please proceed like that:
 
 ```bash
-sudo yunohost app install https://github.com/YunoHost-Apps/librex_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/librey_ynh/tree/testing --debug
 or
-sudo yunohost app upgrade librex -u https://github.com/YunoHost-Apps/librex_ynh/tree/testing --debug
+sudo yunohost app upgrade librex -u https://github.com/YunoHost-Apps/librey_ynh/tree/testing --debug
 ```
 
 **More info regarding app packaging:** <https://yunohost.org/packaging_apps>
